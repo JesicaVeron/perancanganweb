@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+        }
+        
+        .biodata {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(63, 3, 115, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            transition: transform 0.3s ease;
+        }
+        
+        .biodata:hover {
+            transform: translateY(-5px);
+        }
+        
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            grid-column: 1 / -1;
+            margin-bottom: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        h1::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #6c49df;
+            margin: 10px auto 0;
+        }
+        
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 12px;
+            background: #f0eff3;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .info-item:hover {
+            background: #e172f5;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .info-item i {
+            font-size: 1.2em;
+            width: 35px;
+            color: #a334db;
+        }
+        
+        .info-label {
+            font-weight: 500;
+            color: #340763;
+            min-width: 120px;
+            margin-right: 15px;
+        }
+        
+        .info-content {
+            color: #612390;
+            font-weight: 300;
+        }
+        
+        @media (max-width: 768px) {
+            .biodata {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="biodata">
+        <h1>Biodata Diri</h1>
+
+        <div class="info-item">
+            <i class="fas fa-user"></i>
+            <span class="info-label">Nama</span>
+            <span class="info-content">Jesica Veron Br Purba</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="info-label">Tempat Lahir</span>
+            <span class="info-content">Medan, Indonesia</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span class="info-label">Tanggal Lahir</span>
+            <span class="info-content">17 Juni 2005</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <span class="info-label">No. HP/WA</span>
+            <span class="info-content">083875734044</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-home"></i>
+            <span class="info-label">Alamat</span>
+            <span class="info-content">Jl. Melati Indah III, Kec. Percut Sei Tuan, Kab. Deli Serdang</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span class="info-label">Email</span>
+            <span class="info-content">jesicapurba1706@gmail.com</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="info-label">Jurusan</span>
+            <span class="info-content">Teknologi dan Ilmu Komputer</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-laptop-code"></i>
+            <span class="info-label">Program Studi</span>
+            <span class="info-content">Informatika</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-heart"></i>
+            <span class="info-label">Hobi</span>
+            <span class="info-content">Membaca, Menulis, KPop-KDrama Lovers, Mendengar Musik</span>
+        </div>
+        
+        <div class="info-item">
+            <i class="fas fa-tools"></i>
+            <span class="info-label">Skill</span>
+            <span class="info-content">Buat Masalah 😄</span>
+        </div>
+    </div>
+</body>
+</html>
